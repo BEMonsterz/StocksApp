@@ -11,7 +11,7 @@
 @protocol StocksTableControllerDelegate <NSObject>
 
 
--(void) stocksTablePressed;
+-(void) cellPressed: (NSString *) displayStockName;
 
 
 

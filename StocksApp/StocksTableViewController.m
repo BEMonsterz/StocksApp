@@ -16,7 +16,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    stocks = [NSMutableArray arrayWithObjects:@"Apple",@"Google",@"Tesla",nil];
+    stocks = [NSMutableArray arrayWithObjects:@"Apple",@"Google",@"Tesla",@"Hooli",nil];
     NSLog(@"%@", stocks);
 
 }
@@ -50,6 +50,11 @@
 
 
 
+}
+
+
+-(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [self.delegate cellPressed:stocks[indexPath.row]];
 }
 
 
