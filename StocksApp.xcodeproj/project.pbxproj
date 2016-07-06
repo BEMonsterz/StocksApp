@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		117E6F465C039769C01CF3DB /* libPods-StocksApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 084FC332840B43B4D6B21E94 /* libPods-StocksApp.a */; };
 		3348EA1A1D2C1900007321C6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3348EA191D2C1900007321C6 /* main.m */; };
 		3348EA1D1D2C1900007321C6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3348EA1C1D2C1900007321C6 /* AppDelegate.m */; };
 		3348EA201D2C1900007321C6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3348EA1F1D2C1900007321C6 /* ViewController.m */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		084FC332840B43B4D6B21E94 /* libPods-StocksApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StocksApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3348EA151D2C1900007321C6 /* StocksApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StocksApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3348EA191D2C1900007321C6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3348EA1B1D2C1900007321C6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -32,6 +34,8 @@
 		3348EA301D2C1921007321C6 /* StocksTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StocksTableViewController.m; sourceTree = "<group>"; };
 		3348EA321D2C1943007321C6 /* ResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultsViewController.h; sourceTree = "<group>"; };
 		3348EA331D2C1943007321C6 /* ResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultsViewController.m; sourceTree = "<group>"; };
+		A0FCF6676B8F37252E7CC3EE /* Pods-StocksApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StocksApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StocksApp/Pods-StocksApp.debug.xcconfig"; sourceTree = "<group>"; };
+		B7C29CAC23F40C2E1F2E1337 /* Pods-StocksApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StocksApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-StocksApp/Pods-StocksApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				117E6F465C039769C01CF3DB /* libPods-StocksApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +55,8 @@
 			children = (
 				3348EA171D2C1900007321C6 /* StocksApp */,
 				3348EA161D2C1900007321C6 /* Products */,
+				C8C89F2A1E5953FA29166ACA /* Pods */,
+				66E0D2BD618CBF82170CF3B8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,6 +96,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		66E0D2BD618CBF82170CF3B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				084FC332840B43B4D6B21E94 /* libPods-StocksApp.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C8C89F2A1E5953FA29166ACA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A0FCF6676B8F37252E7CC3EE /* Pods-StocksApp.debug.xcconfig */,
+				B7C29CAC23F40C2E1F2E1337 /* Pods-StocksApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -96,9 +120,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3348EA2C1D2C1900007321C6 /* Build configuration list for PBXNativeTarget "StocksApp" */;
 			buildPhases = (
+				77BEB636CF8E810A85BA40E9 /* 📦 Check Pods Manifest.lock */,
 				3348EA111D2C1900007321C6 /* Sources */,
 				3348EA121D2C1900007321C6 /* Frameworks */,
 				3348EA131D2C1900007321C6 /* Resources */,
+				62A18F5C062BA64FBB522886 /* 📦 Embed Pods Frameworks */,
+				900DD5C76E1E84A72F6DA878 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -154,6 +181,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		62A18F5C062BA64FBB522886 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StocksApp/Pods-StocksApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		77BEB636CF8E810A85BA40E9 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		900DD5C76E1E84A72F6DA878 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StocksApp/Pods-StocksApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3348EA111D2C1900007321C6 /* Sources */ = {
@@ -274,6 +349,7 @@
 		};
 		3348EA2D1D2C1900007321C6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0FCF6676B8F37252E7CC3EE /* Pods-StocksApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = StocksApp/Info.plist;
@@ -285,6 +361,7 @@
 		};
 		3348EA2E1D2C1900007321C6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7C29CAC23F40C2E1F2E1337 /* Pods-StocksApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = StocksApp/Info.plist;
@@ -313,6 +390,7 @@
 				3348EA2E1D2C1900007321C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
